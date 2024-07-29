@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.status(200).send("Hello from API server");
 });
 app.get(
-  "https://sharat9703.github.io/timestamp/api/:date",
+  "/api/:date",
   function (req, res, next) {
     const dateparam = req.params.date;
     if (!dateparam) {
